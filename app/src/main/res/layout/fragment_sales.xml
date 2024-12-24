@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingConstraints">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.xc.apex.nre.posdemo.view.fragment.SalesFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_fragment">
+
+        <!--商品列表-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_goods"
+            android:layout_width="@dimen/sale_goods_layout_w"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/layout_ticket_outer"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_goods_title"
+                style="@style/AppNameTitleStyle"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_all_bar"
+                android:layout_width="@dimen/sale_all_bar_w"
+                android:layout_height="@dimen/sale_all_bar_h"
+                android:layout_marginLeft="@dimen/sale_all_bar_ml"
+                android:layout_marginTop="@dimen/sale_all_bar_mt"
+                android:background="@drawable/ic_sales_all_bar"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_goods_title" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_goods"
+                android:layout_width="@dimen/sale_goods_list_w"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/fg_page_padding"
+                android:layout_marginTop="@dimen/sale_goods_list_mt"
+                android:layout_marginRight="@dimen/fg_page_padding"
+                android:layout_marginBottom="@dimen/sale_goods_list_mb"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_all_bar" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--点单列表-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_ticket_outer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_sales_ticket"
+            android:paddingLeft="@dimen/sale_ticket_padding_lrb"
+            android:paddingRight="@dimen/sale_ticket_padding_lrb"
+            android:paddingBottom="@dimen/sale_ticket_padding_lrb"
+            app:layout_constraintLeft_toRightOf="@+id/layout_goods"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/tv_ticket"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/sale_ticket_title_mt"
+                android:gravity="center_horizontal"
+                android:text="@string/txt_ticket"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts_25"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_ticket_clear"
+                android:layout_width="@dimen/sale_ticket_clear_size"
+                android:layout_height="@dimen/sale_ticket_clear_size"
+                android:layout_marginTop="@dimen/sale_ticket_clear_mt"
+                android:onClick="@{presenter::onClick}"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_clear_cannotclick"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/layout_charge"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ticket">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_ticket"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/sale_ticket_list_mlt"
+                    android:layout_marginTop="@dimen/sale_ticket_list_mtb"
+                    android:layout_marginRight="@dimen/sale_ticket_list_mlt"
+                    android:layout_marginBottom="@dimen/sale_ticket_list_mtb"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_empty"
+                    android:layout_width="@dimen/sale_ticket_empty_size"
+                    android:layout_height="@dimen/sale_ticket_empty_size"
+                    android:src="@drawable/ic_empty"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_charge"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sale_charge_btn_layout_h"
+                android:background="@drawable/bg_radius_33_grey"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_ticket_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/sale_charge_money_mr"
+                    android:gravity="center_vertical"
+                    android:text="@string/txt_def_total_value"
+                    android:textColor="@color/dark_98"
+                    android:textSize="@dimen/ts_42"
+                    android:textStyle="bold"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_ticket_charge"
+                    android:layout_width="@dimen/sale_charge_btn_w"
+                    android:layout_height="@dimen/sale_charge_btn_h"
+                    android:layout_marginLeft="@dimen/sale_charge_btn_ml"
+                    android:background="@drawable/bg_sales_charge_btn_cannotclick"
+                    android:gravity="center"
+                    android:onClick="@{presenter::onClick}"
+                    android:text="@string/txt_charge"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/ts_22"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

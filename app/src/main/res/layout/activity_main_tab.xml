@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.xc.apex.nre.posdemo.view.MainTabActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_bg_page">
+
+        <!--Tab-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_tab"
+            android:layout_width="@dimen/tab_layout_w"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.xc.apex.nre.posdemo.view.widget.CustomTabView
+                android:id="@+id/tab_sales"
+                style="@style/MainTabStyleBase"
+                android:onClick="@{presenter::onClick}"
+                app:layout_constraintBottom_toTopOf="@+id/tab_receipts"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:selectedImage="@drawable/ic_sales_selected"
+                app:tabText="@string/txt_tab_sales"
+                app:unselectedImage="@drawable/ic_sales_unselected" />
+
+            <com.xc.apex.nre.posdemo.view.widget.CustomTabView
+                android:id="@+id/tab_receipts"
+                style="@style/MainTabStyle"
+                android:onClick="@{presenter::onClick}"
+                app:layout_constraintBottom_toTopOf="@+id/tab_items"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_sales"
+                app:selectedImage="@drawable/ic_receipt_selected"
+                app:tabText="@string/txt_tab_receipts"
+                app:unselectedImage="@drawable/ic_receipt_unselected" />
+
+            <com.xc.apex.nre.posdemo.view.widget.CustomTabView
+                android:id="@+id/tab_items"
+                style="@style/MainTabStyle"
+                android:onClick="@{presenter::onClick}"
+                app:layout_constraintBottom_toTopOf="@+id/tab_setting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_receipts"
+                app:selectedImage="@drawable/ic_items_selected"
+                app:tabText="@string/txt_tab_items"
+                app:unselectedImage="@drawable/ic_items_unselected" />
+
+            <com.xc.apex.nre.posdemo.view.widget.CustomTabView
+                android:id="@+id/tab_setting"
+                style="@style/MainTabStyle"
+                android:onClick="@{presenter::onClick}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tab_items"
+                app:selectedImage="@drawable/ic_setting_selected"
+                app:tabText="@string/txt_tab_setting"
+                app:unselectedImage="@drawable/ic_setting_unselected" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--fragment容器-->
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/layout_tab"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

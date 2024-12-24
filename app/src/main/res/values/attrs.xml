@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTabView">
+        <attr name="tabText" format="string" />
+        <attr name="unselectedImage" format="reference" />
+        <attr name="selectedImage" format="reference" />
+        <attr name="unselectedTextColor" format="color" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="unselectedBackgroundTab" format="reference" />
+        <attr name="selectedBackgroundTab" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomPayWay">
+        <attr name="payWayTxt" format="string" />
+        <attr name="payWayImage" format="reference" />
+        <attr name="selectedBackground" format="reference" />
+        <attr name="unselectedBackground" format="reference" />
+        <attr name="unselectedTextColorPay" format="color" />
+        <attr name="selectedTextColorPay" format="color" />
+    </declare-styleable>
+</resources>

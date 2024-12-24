@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/sale_dialog_w"
+    android:layout_height="@dimen/sale_dialog_h">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/sale_dialog_w"
+        android:layout_height="@dimen/sale_dialog_h"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/txt_clear_order"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ts_20"
+            app:layout_constraintBottom_toTopOf="@id/layout_btn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sale_dialog_btn_h"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/separate"
+                android:background="@color/gray_e7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/txt_dialog_cancel"
+                android:textColor="@color/black"
+                android:textSize="@dimen/ts_18"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/vs" />
+
+            <View
+                android:id="@+id/vs"
+                android:layout_width="@dimen/separate"
+                android:layout_height="match_parent"
+                android:background="@color/gray_e7"
+                app:layout_constraintLeft_toRightOf="@+id/cancel"
+                app:layout_constraintRight_toLeftOf="@+id/sure" />
+
+            <TextView
+                android:id="@+id/sure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/txt_dialog_clear"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/ts_18"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintLeft_toRightOf="@id/vs"
+                app:layout_constraintRight_toRightOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

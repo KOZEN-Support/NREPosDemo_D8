@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--字号-->
+    <dimen name="ts_12">12sp</dimen>
+    <dimen name="ts_13">13sp</dimen>
+    <dimen name="ts_14">14sp</dimen>
+    <dimen name="ts_15">15sp</dimen>
+    <dimen name="ts_16">16sp</dimen>
+    <dimen name="ts_17">17sp</dimen>
+    <dimen name="ts_18">18sp</dimen>
+    <dimen name="ts_19">19sp</dimen>
+    <dimen name="ts_20">20sp</dimen>
+    <dimen name="ts_22">22sp</dimen>
+    <dimen name="ts_23">23sp</dimen>
+    <dimen name="ts_24">24sp</dimen>
+    <dimen name="ts_25">25sp</dimen>
+    <dimen name="ts_26">26sp</dimen>
+    <dimen name="ts_30">30sp</dimen>
+    <dimen name="ts_33">33sp</dimen>
+    <dimen name="ts_36">36sp</dimen>
+    <dimen name="ts_40">40sp</dimen>
+    <dimen name="ts_42">42sp</dimen>
+    <dimen name="ts_60">60sp</dimen>
+    <dimen name="ts_64">64sp</dimen>
+    <dimen name="ts_66">66sp</dimen>
+
+    <!--圆角-->
+    <dimen name="radius_18">18dp</dimen>
+    <dimen name="radius_33">33dp</dimen>
+    <dimen name="radius_44">44dp</dimen>
+    <dimen name="radius_48">48dp</dimen>
+    <dimen name="broder_stroke_w">4dp</dimen>
+
+    <!--通用-->
+    <dimen name="fg_page_app_title_ts">35sp</dimen>
+    <dimen name="fg_page_app_title_margin_t">35dp</dimen>
+    <dimen name="fg_page_app_title_margin_b">29dp</dimen>
+    <dimen name="fg_page_app_title_margin_l">75dp</dimen>
+    <dimen name="fg_page_padding">35dp</dimen>
+    <dimen name="fg_model_inner_padding">18dp</dimen>
+    <dimen name="separate">1px</dimen>
+
+    <!--启动页-->
+    <dimen name="splash_icon_size">130dp</dimen>
+    <dimen name="splash_app_name_mt">12dp</dimen>
+
+    <!--首页 Tab-->
+    <dimen name="tab_item_img_size">33dp</dimen>
+    <dimen name="tab_item_size">75dp</dimen>
+    <dimen name="tab_layout_w">123dp</dimen>
+    <dimen name="tab_item_m">30dp</dimen>
+
+    <!--Sales-->
+    <dimen name="sale_goods_layout_w">830dp</dimen>
+    <dimen name="sale_all_bar_w">140dp</dimen>
+    <dimen name="sale_all_bar_h">43dp</dimen>
+    <dimen name="sale_all_bar_mt">25dp</dimen>
+    <dimen name="sale_all_bar_ml">75dp</dimen>
+    <dimen name="sale_goods_list_w">770dp</dimen>
+    <dimen name="sale_goods_list_mt">28dp</dimen>
+    <dimen name="sale_goods_list_mb">30dp</dimen>
+    <dimen name="sale_ticket_padding_lrb">30dp</dimen>
+    <dimen name="sale_ticket_title_mt">50dp</dimen>
+    <dimen name="sale_ticket_clear_size">55dp</dimen>
+    <dimen name="sale_ticket_clear_mt">35dp</dimen>
+    <dimen name="sale_ticket_list_mlt">16dp</dimen>
+    <dimen name="sale_ticket_list_mtb">45dp</dimen>
+    <dimen name="sale_ticket_empty_size">165dp</dimen>
+    <dimen name="sale_charge_btn_layout_h">125dp</dimen>
+    <dimen name="sale_charge_money_mr">28dp</dimen>
+    <dimen name="sale_charge_btn_w">195dp</dimen>
+    <dimen name="sale_charge_btn_h">70dp</dimen>
+    <dimen name="sale_charge_btn_ml">16dp</dimen>
+    <dimen name="sale_card_item_w">235dp</dimen>
+    <dimen name="sale_card_item_h">165dp</dimen>
+    <dimen name="sale_card_item_pressed_border_w">2dp</dimen>
+    <dimen name="sale_card_item_img_m">8dp</dimen>
+    <dimen name="sale_card_item_sub_layout_w">223dp</dimen>
+    <dimen name="sale_card_item_sub_layout_h">45dp</dimen>
+    <dimen name="sale_card_item_sub_layout_mb">6dp</dimen>
+    <dimen name="sale_card_item_sub_layout_plr">16dp</dimen>
+    <dimen name="sale_ticket_item_h">50dp</dimen>
+    <dimen name="sale_ticket_item_btn_size">23dp</dimen>
+    <dimen name="sale_dialog_h">265dp</dimen>
+    <dimen name="sale_dialog_w">420dp</dimen>
+    <dimen name="sale_dialog_btn_h">65dp</dimen>
+
+    <!--Charge-->
+    <dimen name="charge_back_btn_size">55dp</dimen>
+    <dimen name="charge_back_btn_mt">35dp</dimen>
+    <dimen name="charge_order_layout_w">465dp</dimen>
+    <dimen name="charge_order_layout_mt">32dp</dimen>
+    <dimen name="charge_order_table_title_h">50dp</dimen>
+    <dimen name="charge_order_table_title_mt">10dp</dimen>
+    <dimen name="charge_order_list_mrl">39dp</dimen>
+    <dimen name="charge_order_money_btn_layout_h">76dp</dimen>
+    <dimen name="charge_order_money_btn_layout_mt">40dp</dimen>
+    <dimen name="charge_pay_layout_h">300dp</dimen>
+    <dimen name="charge_cash_layout_h">180dp</dimen>
+    <dimen name="charge_cash_mt">29dp</dimen>
+    <dimen name="charge_cash_et_h">72dp</dimen>
+    <dimen name="charge_cash_et_mr">20dp</dimen>
+    <dimen name="charge_cash_et_mt">25dp</dimen>
+    <dimen name="charge_cash_et_prl">36dp</dimen>
+    <dimen name="charge_cash_charge_w">195dp</dimen>
+    <dimen name="charge_cash_charge_h">72dp</dimen>
+    <dimen name="charge_pay_wait_img_h">230dp</dimen>
+    <dimen name="charge_pay_wait_img_mb">38dp</dimen>
+    <dimen name="charge_pay_wait_img_mt">30dp</dimen>
+    <dimen name="charge_pay_type_card_h">170dp</dimen>
+    <dimen name="charge_pay_type_card_w">235dp</dimen>
+    <dimen name="charge_pay_type_card_img_size">105dp</dimen>
+    <dimen name="charge_pay_result_img_size">260dp</dimen>
+    <dimen name="charge_pay_result_img_mt">30dp</dimen>
+    <dimen name="charge_pay_result_btn_h">85dp</dimen>
+    <dimen name="charge_order_item_h">50dp</dimen>
+
+    <!--Receipts-->
+    <dimen name="receipts_card_layout_mt">25dp</dimen>
+    <dimen name="receipts_card_layout_mb">39dp</dimen>
+    <dimen name="receipts_list_w">482dp</dimen>
+    <dimen name="receipts_list_pt">15dp</dimen>
+    <dimen name="receipts_list_pr">28dp</dimen>
+    <dimen name="receipts_list_pb">60dp</dimen>
+    <dimen name="receipts_list_item_h">55dp</dimen>
+    <dimen name="receipts_list_item_pl">65dp</dimen>
+    <dimen name="receipts_list_item_pr">42dp</dimen>
+    <dimen name="receipts_scroll_bar_w">8dp</dimen>
+    <dimen name="receipts_img_h">520dp</dimen>
+
+    <!--Items-->
+    <dimen name="item_card_layout_mt">25dp</dimen>
+    <dimen name="item_card_layout_mb">39dp</dimen>
+    <dimen name="item_list_mtb">30dp</dimen>
+    <dimen name="item_list_mlr">40dp</dimen>
+    <dimen name="items_item_h">65dp</dimen>
+    <dimen name="items_item_plr">10dp</dimen>
+    <dimen name="items_item_icon_size">45dp</dimen>
+    <dimen name="items_item_img_ml">15dp</dimen>
+    <dimen name="items_item_name_ml">60dp</dimen>
+    <dimen name="items_item_price_w">80dp</dimen>
+
+    <!--Setting-->
+    <dimen name="setting_card_layout_mt">25dp</dimen>
+    <dimen name="setting_display_item_h">72dp</dimen>
+    <dimen name="setting_display_item_mt">50dp</dimen>
+    <dimen name="setting_display_h">120dp</dimen>
+    <dimen name="setting_display_ml">27dp</dimen>
+    <dimen name="setting_device_state_w">180</dimen>
+    <dimen name="setting_device_state_h">65dp</dimen>
+    <dimen name="setting_device_state_paddingRL">60dp</dimen>
+    <dimen name="setting_device_ml">30dp</dimen>
+    <dimen name="setting_device_mr">25dp</dimen>
+</resources>

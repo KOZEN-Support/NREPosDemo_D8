@@ -1,0 +1,37 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    versionCatalogs {
+        libs {
+            version('compileSdk', '34')
+            version('minSdk', '30')
+            version('targetSdk', '34')
+            version('appVersionCode', '241127')
+            version('appVersionName', '1.1.0')
+
+            library('appcompat', 'androidx.appcompat:appcompat:1.6.1')
+            library('material', 'com.google.android.material:material:1.10.0')
+            library('constraintlayout', 'androidx.constraintlayout:constraintlayout:2.1.4')
+            library('glide', 'com.github.bumptech.glide:glide:4.15.1')
+            library('glideCompiler', 'com.github.bumptech.glide:compiler:4.15.1')
+            library('gson', 'com.google.code.gson:gson:2.8.5')
+            library('circleImageView', 'de.hdodenhof:circleimageview:3.1.0')
+            library('eventbus', 'org.greenrobot:eventbus:3.3.1')
+        }
+    }
+}
+
+rootProject.name = "NREPosDemo"
+include ':app'
+include ':lib_usb'

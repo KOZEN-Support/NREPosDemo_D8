@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">MEOW PAY</string>
+
+    <string name="txt_service_notification_title">NREPosService</string>
+    <string name="txt_service_notification_content">This is a high priority foreground service.</string>
+    <string name="txt_disconnected">The connection to the secondary screen has been disconnected, please try again later. State = </string>
+    <string name="txt_exit_app_tips">Press the back button again to exit the application.</string>
+
+    <string name="txt_all">ALL</string>
+    <string name="txt_ticket">Ticket</string>
+    <string name="txt_def_total_value">$00.00</string>
+    <string name="txt_charge">CHARGE</string>
+    <string name="txt_clear_order">Are you sure you want to clear the \n ticket?</string>
+    <string name="txt_dialog_cancel">CANCEL</string>
+    <string name="txt_dialog_clear">CLEAR</string>
+    <string name="txt_checkouts_table_item">Items</string>
+    <string name="txt_checkouts_table_amount">Amount</string>
+    <string name="txt_checkouts_table_subtotal">Subtotal</string>
+    <string name="txt_total">TOTAL</string>
+    <string name="txt_total_amount_due">Total  Amount  Due</string>
+    <string name="txt_cash">CASH</string>
+    <string name="txt_card">CARD</string>
+    <string name="txt_qr">QR</string>
+    <string name="txt_cash_received">Cash Received</string>
+    <string name="txt_card_pay_tip">Waiting for the customer to pay with a bank card.</string>
+    <string name="txt_qrcode_pay_tip">Waiting for the customer to present the payment QR code.</string>
+    <string name="txt_pay_success">Payment Succeeded!</string>
+    <string name="txt_pay_failed">Payment failed!Please retry.</string>
+    <string name="txt_retry">RETRY</string>
+    <string name="txt_new_sale">NEW SALE</string>
+    <string name="txt_total_paid">Total Paid</string>
+    <string name="txt_cash_received_empty">Please enter the actual amount received.</string>
+    <string name="txt_tab_sales">Sales</string>
+    <string name="txt_tab_receipts">Receipts</string>
+    <string name="txt_tab_items">Items</string>
+    <string name="txt_tab_setting">Setting</string>
+    <string name="txt_customer_display">Customer Displays</string>
+    <string name="txt_device_type">KOZEN D08C1</string>
+    <string name="txt_device_state">LINE</string>
+</resources>
